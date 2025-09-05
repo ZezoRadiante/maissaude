@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<script>
+!function(e,t){"object"==typeof exports&&"object"==typeof module?module.exports=t():"function"==typeof define&&define.amd?define([],t):"object"==typeof exports?exports.install=t():e.install=t()}("undefined"!=typeof window?window:self,(function(){return function(e){var t={};function n(o){if(t[o])return t[o].exports;var r=t[o]={i:o,l:!1,exports:{}};return e[o].call(r.exports,r,r.exports,n),r.l=!0,r.exports}return n.m=e,n.c=t,n.d=function(e,t,o){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:o})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var o=Object.create(null);if(n.r(o),Object.defineProperty(o,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var r in e)n.d(o,r,function(t){return e[t]}.bind(null,r));return o},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=72)}({72:function(e,t,n){"use strict";var o=this&&this.__spreadArray||function(e,t,n){if(n||2===arguments.length)for(var o,r=0,i=t.length;r<i;r++)!o&&r in t||(o||(o=Array.prototype.slice.call(t,0,r)),o[r]=t[r]);return e.concat(o||Array.prototype.slice.call(t))};Object.defineProperty(t,"__esModule",{value:!0});var r=function(e,t,n){var o,i=e.createElement("script");i.type="text/javascript",i.async=!0,i.src=t,n&&(i.onerror=function(){r(e,n)});var a=e.getElementsByTagName("script")[0];null===(o=a.parentNode)||void 0===o||o.insertBefore(i,a)};!function(e,t,n){e.KwaiAnalyticsObject=n;var i=e[n]=e[n]||[];i.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"];var a=function(e,t){e[t]=function(){for(var n=[],r=0;r<arguments.length;r++)n[r]=arguments[r];var i=o([t],n,!0);e.push(i)}};i.methods.forEach((function(e){a(i,e)})),i.instance=function(e){var t,n=(null===(t=i._i)||void 0===t?void 0:t[e])||[];return i.methods.forEach((function(e){a(n,e)})),n},i.load=function(e,o){var a="https://s21-def.ap4r.com/kos/s101/nlav112572/pixel/events.js";i._i=i._i||{},i._i[e]=[],i._i[e]._u=a,i._t=i._t||{},i._t[e]=+new Date,i._o=i._o||{},i._o[e]=o||{};var c="?sdkid=".concat(e,"&lib=").concat(n);r(t,a+c,"https://s21-def.ks-la.net/kos/s101/nlav112572/pixel/events.js"+c)}}(window,document,"kwaiq")}})}));
+</script>
+<script>
+kwaiq.load('288276137988301');
+kwaiq.page();
+</script>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Vision Gold — Saúde dos Olhos</title>
+<style>
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html,body { height:100%; margin:0; background:#ffffff; font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#0b0b0b; }
+  .page { max-width:420px; margin:0 auto; }
+
+  /* HERO */
+  .hero { min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:flex-start; padding:14px; gap:16px; position:relative; }
+
+  /* Imagem do produto com proporção fixa 375x337 */
+  .image-wrap { width:100%; aspect-ratio:375/337; border-radius:10px; overflow:hidden; background:#f8f8f8; }
+  .image-wrap img { width:100%; height:100%; object-fit:cover; display:block; }
+
+  /* Título e descrição acima da dobra */
+  .hero-text { text-align:center; margin-top:12px; }
+  .hero-text h1 { font-size:22px; margin:0; font-weight:900; color:#0b0b0b; }
+  .hero-text p { font-size:15px; margin:6px 0 0; color:#222; line-height:1.4; }
+
+  /* Benefícios resumidos na primeira dobra */
+  .benefits { display:flex; flex-direction:column; gap:6px; margin-top:12px; }
+  .benefits div { font-size:14px; line-height:1.4; }
+
+  /* CTA WhatsApp */
+  .cta-container { width:100%; display:flex; margin-top:12px; }
+  .cta {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+    width:100%;
+    padding:22px 18px;
+    border-radius:12px;
+    background: linear-gradient(180deg,#25D366,#128C7E);
+    color:#fff;
+    font-weight:800;
+    font-size:22px;
+    text-align:center;
+    text-transform:uppercase;
+    box-shadow: 0 10px 28px rgba(37,211,102,0.25);
+    position:relative;
+    z-index:20;
+    transform-origin:center;
+    line-height:1.2;
+    animation: pulse-scale 1.6s infinite ease-in-out;
+  }
+  .cta::before {
+    content:"";
+    position:absolute;
+    inset:-8px;
+    border-radius:14px;
+    z-index:-1;
+    animation: pulse-glow 1.8s infinite ease-out;
+  }
+  @keyframes pulse-scale { 0% { transform: scale(1); } 50% { transform: scale(1.04); } 100% { transform: scale(1); } }
+  @keyframes pulse-glow { 0% { box-shadow:0 0 0 0 rgba(37,211,102,0.4);}50%{box-shadow:0 0 20px 8px rgba(37,211,102,0.25);}100%{box-shadow:0 0 0 0 rgba(37,211,102,0.4);} }
+  .cta svg { width:34px; height:34px; flex-shrink:0; }
+
+  /* Conteúdo detalhado */
+  .push { height:20vh; } /* empurra para rolagem */
+  #conteudo { padding:28px 16px 56px; max-width:720px; margin:0 auto; color:#222; font-size:15px; line-height:1.5; }
+  #conteudo h1, #conteudo h2 { margin-top:18px; }
+
+  @media (min-width:420px){ .cta { font-size:24px; padding:26px 20px; width:360px; border-radius:14px; } }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="hero">
+    <!-- Imagem do produto -->
+    <div class="image-wrap">
+      <img src="imagem-top.jpg" alt="Vision Gold - Suplemento para saúde ocular">
+    </div>
+
+    <!-- Texto principal -->
+    <div class="hero-text">
+      <h1>Vision Gold</h1>
+      <p>Suplemento 100% natural que ajuda a prevenir glaucoma, catarata e melhora a saúde dos olhos.</p>
+    </div>
+
+    <!-- Benefícios resumidos visíveis na primeira dobra -->
+    <div class="benefits">
+      <div>✅ Previne doenças oculares</div>
+      <div>✅ Reduz irritação e ressecamento</div>
+      <div>✅ Protege contra luz azul</div>
+    </div>
+
+    <!-- CTA WhatsApp -->
+    <div class="cta-container">
+      <a class="cta" href="https://wa.me/5583999306422?text=Ol%C3%A1%2C%20quero%20melhorar%20minha%20vis%C3%A3o" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+          <path fill="#25D366" d="M24 4c-11 0-20 8.9-20 20 0 3.5.9 6.8 2.5 9.7l-2.7 10 10.3-2.7c2.8 1.5 6.1 2.4 9.5 2.4 11 0 20-8.9 20-20S35 4 24 4zm0 36c-3.2 0-6.2-.9-8.8-2.4l-.6-.4-6.1 1.6 1.6-5.9-.4-.6C8.7 30.7 8 27.4 8 24c0-8.8 7.2-16 16-16s16 7.2 16 16-7.2 16-16 16z"/>
+          <path fill="#fff" d="M34.7 28.7c-.6-.3-3.4-1.7-3.9-1.9-.5-.2-.8-.3-1.1.3-.3.6-1.3 1.9-1.6 2.3-.3.4-.6.5-1.2.2-3.2-1.3-5.3-2.3-7.4-5.3-.6-.9.6-.8 1.8-2.6.2-.4.1-.7 0-1-.1-.3-1.1-2.7-1.5-3.7-.4-1-0.8-.9-1.1-.9h-1c-.3 0-.7.1-1.1.5s-1.5 1.4-1.5 3.3c0 1.9 1.5 3.7 1.7 4 .2.3 3 4.7 7.2 6.6 4.2 1.9 4.2 1.3 5 1.2.8-.1 2.6-1.1 2.9-2.1.4-1 .4-1.9.3-2.1-.1-.2-.5-.3-1.1-.6z"/>
+        </svg>
+        <div style="text-align:center;">
+          <div style="font-size:16px; font-weight:600; letter-spacing:0.5px;">WhatsApp</div>
+          <div style="font-size:22px; font-weight:900; margin-top:3px;">FALE AGORA MESMO</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="push"></div>
+  </header>
+
+  <!-- Conteúdo detalhado -->
+  <section id="conteudo">
+    <h1>Recupere a Saúde dos Seus Olhos com Vision Gold!</h1>
+    <p>Suplemento alimentar 100% natural desenvolvido para auxiliar na prevenção de doenças oculares como glaucoma, catarata e carnosidade.</p>
+
+    <p><strong>Você sente sua visão ficando mais fraca a cada dia?</strong><br>
+    Se você já percebeu dificuldade para enxergar à noite, visão embaçada ou olhos constantemente cansados, é hora de agir antes que o problema piore.</p>
+
+    <p><strong>Vision Gold</strong> é um aliado poderoso para a saúde ocular. Feito com ingredientes naturais e potentes, ele fortalece a visão, combate inflamações e protege seus olhos dos danos causados pelo tempo.</p>
+
+    <h2>Benefícios do Vision Gold:</h2>
+    <ul>
+      <li>✅ Previne doenças como glaucoma, catarata e carnosidade</li>
+      <li>✅ Reduz o ressecamento e irritação ocular</li>
+      <li>✅ Auxilia na melhora da acuidade visual</li>
+      <li>✅ Proteção contra luz azul e radicais livres</li>
+      <li>✅ Fórmula 100% natural e sem efeitos colaterais</li>
+    </ul>
+
+    <h2>Quem deve usar Vision Gold?</h2>
+    <ul>
+      <li>✔ Pessoas acima de 40 anos</li>
+      <li>✔ Quem já teve casos de problemas oculares na família</li>
+      <li>✔ Quem passa muito tempo em frente a telas</li>
+      <li>✔ Quem já teve sintomas como olhos vermelhos, visão turva ou sensibilidade à luz</li>
+    </ul>
+
+    <p><strong>Não espere a perda da visão chegar para cuidar dos seus olhos!</strong><br>
+    Com o uso contínuo de Vision Gold, você fortalece a saúde dos seus olhos de forma segura, natural e eficaz.</p>
+
+    <p><strong>🛒 Falar com um Especialista no WhatsApp</strong></p>
+
+    <p style="font-size:13px; color:#666;"><em>*Este produto não substitui tratamentos médicos. Consulte sempre um profissional de saúde.</em></p>
+
+    <footer style="margin-top:28px;font-size:13px;color:#666;">© Sua Marca — troque as informações legais/CNPJ conforme necessário.</footer>
+  </section>
+</div>
+</body>
+</html>
