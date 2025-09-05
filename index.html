@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <script>
@@ -8,144 +8,143 @@
 kwaiq.load('288276137988301');
 kwaiq.page();
 </script>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Vision Gold — Saúde dos Olhos</title>
-<style>
-  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-  html,body { height:100%; margin:0; background:#ffffff; font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#0b0b0b; }
-  .page { max-width:420px; margin:0 auto; }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vision Gold</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #111111;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      padding: 20px;
+    }
 
-  /* HERO */
-  .hero { min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:flex-start; padding:14px; gap:16px; position:relative; }
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 15px;
+      color: #222222;
+    }
 
-  /* Imagem do produto 500x500 */
-  .image-wrap { width:100%; aspect-ratio:1/1; border-radius:10px; overflow:hidden; background:#f8f8f8; }
-  .image-wrap img { width:100%; height:100%; object-fit:cover; display:block; }
+    img {
+      max-width: 200px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
 
-  /* Título e descrição acima da dobra */
-  .hero-text { text-align:center; margin-top:12px; }
-  .hero-text h1 { font-size:22px; margin:0; font-weight:900; color:#0b0b0b; }
-  .hero-text p { font-size:15px; margin:6px 0 0; color:#222; line-height:1.4; }
+    p {
+      font-size: 16px;
+      text-align: center;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
 
-  /* Benefícios resumidos visíveis na primeira dobra */
-  .benefits { display:flex; flex-direction:column; gap:6px; margin-top:12px; }
-  .benefits div { font-size:14px; line-height:1.4; }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 30px;
+    }
 
-  /* CTA WhatsApp pulsante */
-  .cta-container { width:100%; display:flex; margin-top:12px; }
-  .cta {
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:14px;
-    width:100%;
-    padding:22px 18px;
-    border-radius:12px;
-    background: linear-gradient(180deg,#25D366,#128C7E);
-    color:#fff;
-    font-weight:800;
-    font-size:22px;
-    text-align:center;
-    text-transform:uppercase;
-    box-shadow: 0 10px 28px rgba(37,211,102,0.25);
-    position:relative;
-    z-index:20;
-    transform-origin:center;
-    line-height:1.2;
-    animation: pulse-scale 1.6s infinite ease-in-out;
-  }
-  .cta::before {
-    content:"";
-    position:absolute;
-    inset:-8px;
-    border-radius:14px;
-    z-index:-1;
-    animation: pulse-glow 1.8s infinite ease-out;
-  }
-  @keyframes pulse-scale { 0% { transform: scale(1); } 50% { transform: scale(1.04); } 100% { transform: scale(1); } }
-  @keyframes pulse-glow { 0% { box-shadow:0 0 0 0 rgba(37,211,102,0.4);}50%{box-shadow:0 0 20px 8px rgba(37,211,102,0.25);}100%{box-shadow:0 0 0 0 rgba(37,211,102,0.4);} }
-  .cta svg { width:34px; height:34px; flex-shrink:0; }
+    ul li {
+      font-size: 16px;
+      margin: 8px 0;
+      padding-left: 25px;
+      position: relative;
+    }
 
-  /* Conteúdo detalhado */
-  .push { height:20vh; } 
-  #conteudo { padding:28px 16px 56px; max-width:720px; margin:0 auto; color:#222; font-size:15px; line-height:1.5; }
-  #conteudo h1, #conteudo h2 { margin-top:18px; }
+    ul li::before {
+      content: "🔹";
+      position: absolute;
+      left: 0;
+    }
 
-  @media (min-width:420px){ .cta { font-size:24px; padding:26px 20px; width:360px; border-radius:14px; } }
-</style>
+    .whatsapp-button {
+      display: block;
+      width: 100%;
+      max-width: 400px;
+      background-color: #25D366;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      padding: 15px;
+      border-radius: 8px;
+      text-decoration: none;
+      animation: pulse 1.5s infinite;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin: 15px 0;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    .guarantee {
+      font-size: 14px;
+      color: #555555;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    @media(min-width: 768px){
+      body {
+        padding: 50px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      p, ul li {
+        font-size: 18px;
+      }
+
+      .whatsapp-button {
+        width: 250px;
+      }
+    }
+  </style>
 </head>
 <body>
-<div class="page">
-  <header class="hero">
-    <!-- Imagem do produto 500x500 -->
-    <div class="image-wrap">
-      <img src="imagem-top.jpg" alt="Vision Gold - Suplemento para saúde ocular">
-    </div>
 
-    <!-- Texto principal -->
-    <div class="hero-text">
-      <h1>Vision Gold</h1>
-      <p>Suplemento 100% natural que auxilia na prevenção de doenças oculares.</p>
-    </div>
+  <h1>👁️ Recupere a saúde da sua visão de forma natural!</h1>
 
-    <!-- Benefícios resumidos -->
-    <div class="benefits">
-      <div>✅ Previne doenças oculares</div>
-      <div>✅ Reduz irritação e ressecamento</div>
-      <div>✅ Protege contra luz azul</div>
-    </div>
+  <!-- Header image -->
+  <img src="imagem-top.jpg" alt="Vision Gold">
 
-    <!-- CTA WhatsApp -->
-    <div class="cta-container">
-      <a class="cta" href="https://wa.me/5583999306422?text=Ol%C3%A1%2C%20quero%20melhorar%20minha%20vis%C3%A3o" target="_blank" rel="noopener noreferrer">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-          <path fill="#25D366" d="M24 4c-11 0-20 8.9-20 20 0 3.5.9 6.8 2.5 9.7l-2.7 10 10.3-2.7c2.8 1.5 6.1 2.4 9.5 2.4 11 0 20-8.9 20-20S35 4 24 4zm0 36c-3.2 0-6.2-.9-8.8-2.4l-.6-.4-6.1 1.6 1.6-5.9-.4-.6C8.7 30.7 8 27.4 8 24c0-8.8 7.2-16 16-16s16 7.2 16 16-7.2 16-16 16z"/>
-          <path fill="#fff" d="M34.7 28.7c-.6-.3-3.4-1.7-3.9-1.9-.5-.2-.8-.3-1.1.3-.3.6-1.3 1.9-1.6 2.3-.3.4-.6.5-1.2.2-3.2-1.3-5.3-2.3-7.4-5.3-.6-.9.6-.8 1.8-2.6.2-.4.1-.7 0-1-.1-.3-1.1-2.7-1.5-3.7-.4-1-0.8-.9-1.1-.9h-1c-.3 0-.7.1-1.1.5s-1.5 1.4-1.5 3.3c0 1.9 1.5 3.7 1.7 4 .2.3 3 4.7 7.2 6.6 4.2 1.9 4.2 1.3 5 1.2.8-.1 2.6-1.1 2.9-2.1.4-1 .4-1.9.3-2.1-.1-.2-.5-.3-1.1-.6z"/>
-        </svg>
-        <div style="text-align:center;">
-          <div style="font-size:16px; font-weight:600; letter-spacing:0.5px;">WhatsApp</div>
-          <div style="font-size:22px; font-weight:900; margin-top:3px;">FALE AGORA MESMO</div>
-        </div>
-      </a>
-    </div>
+  <p>Se você sente que a visão está cansada, com dificuldade para enxergar de perto ou longe, <strong>o Vision Gold é a solução 100% natural</strong> que vai ajudar seus olhos a voltarem a funcionar melhor.<br>Não é remédio, é <strong>suplemento alimentar</strong>, feito com ingredientes selecionados que fortalecem a saúde ocular.</p>
 
-    <div class="push"></div>
-  </header>
+  <!-- Botão 1 -->
+  <a href="https://wa.me/5583999306422?text=Olá,%20quero%20melhorar%20minha%20visão" class="whatsapp-button">📲 Fale agora mesmo com um especialista!</a>
 
-  <!-- Conteúdo detalhado -->
-  <section id="conteudo">
-    <h1>Recupere a Saúde dos Seus Olhos com Vision Gold!</h1>
-    <p>Suplemento alimentar 100% natural desenvolvido para auxiliar na prevenção de doenças oculares como glaucoma, catarata e carnosidade.</p>
+  <ul>
+    <li>Ajuda a reduzir a fadiga ocular.</li>
+    <li>Fortalece a retina e a visão noturna.</li>
+    <li>Mantém os olhos hidratados e saudáveis.</li>
+    <li>Suporte natural para degeneração ocular e envelhecimento da visão.</li>
+  </ul>
 
-    <p><strong>Você sente sua visão ficando mais fraca a cada dia?</strong><br>
-    Se você já percebeu dificuldade para enxergar à noite, visão embaçada ou olhos cansados, é hora de agir preventivamente.</p>
+  <!-- Botão 2 -->
+  <a href="https://wa.me/5583999306422?text=Olá,%20quero%20melhorar%20minha%20visão" class="whatsapp-button">💬 Quero meu Vision Gold agora!</a>
 
-    <p><strong>Vision Gold</strong> é um aliado poderoso para a saúde ocular. Feito com ingredientes naturais, auxilia na proteção dos olhos e no cuidado diário da visão.</p>
+  <p>Não perca a chance de cuidar da sua visão com um suplemento totalmente natural e seguro.</p>
 
-    <h2>Benefícios do Vision Gold:</h2>
-    <ul>
-      <li>✅ Previne doenças oculares</li>
-      <li>✅ Reduz irritação e ressecamento</li>
-      <li>✅ Auxilia na acuidade visual</li>
-      <li>✅ Proteção contra luz azul e radicais livres</li>
-      <li>✅ Fórmula 100% natural</li>
-    </ul>
+  <!-- Botão 3 -->
+  <a href="https://wa.me/5583999306422?text=Olá,%20quero%20melhorar%20minha%20visão" class="whatsapp-button">✅ Enviar mensagem e garantir meu Vision Gold!</a>
 
-    <h2>Quem deve usar Vision Gold?</h2>
-    <ul>
-      <li>✔ Pessoas acima de 40 anos</li>
-      <li>✔ Quem já teve casos de problemas oculares na família</li>
-      <li>✔ Quem passa muito tempo em frente a telas</li>
-      <li>✔ Quem sente olhos vermelhos, visão turva ou sensibilidade à luz</li>
-    </ul>
+  <div class="guarantee">
+    🔒 Envio 100% seguro e discreto.<br>
+    💊 Produto certificado, com ingredientes naturais, livre de efeitos colaterais.
+  </div>
 
-    <p><strong>🛒 Falar com um Especialista no WhatsApp</strong></p>
-
-    <p style="font-size:13px; color:#666;"><em>*Este produto não substitui tratamentos médicos. Consulte sempre um profissional de saúde.</em></p>
-
-    <footer style="margin-top:28px;font-size:13px;color:#666;">© Sua Marca — troque as informações legais/CNPJ conforme necessário.</footer>
-  </section>
-</div>
 </body>
 </html>
